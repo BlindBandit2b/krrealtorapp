@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Заголовок -->
+
+    <!-- Площадь -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Свободные квартиры (2-3 этаж)"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Площадь (м²)"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Например: 45.5"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Количество комнат -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество комнат"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etRooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Например: 2"
+        android:inputType="number"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Кнопка -->
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="НАЙТИ СВОБОДНЫЕ КВАРТИРЫ"
+        android:padding="14dp"/>
+
+    <!-- Список результатов -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

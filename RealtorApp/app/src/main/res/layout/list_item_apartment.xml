@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFloor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2" />
+
+    <TextView
+        android:id="@+id/tvRooms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/imgBath"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/tvBathroom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5" />
+
+    <ImageView
+        android:id="@+id/imgStatus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:textStyle="bold" />
+
+<Button
+        android:id="@+id/btnAddToCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📅"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"/>
+</LinearLayout>
